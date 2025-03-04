@@ -10,6 +10,11 @@ export default function SideBar() {
   let toggleCollapse = () => {
     setIsCollapse(!isCollapse)
   }
+
+  const removeFromLocalStorage = () => {
+    localStorage.removeItem('token'); // 'myItem' is the key you're removing
+    console.log('token removed from localStorage');
+  };
   
  
   return (
@@ -66,8 +71,8 @@ export default function SideBar() {
          >
         
          Change Password
-        </MenuItem>
-        <MenuItem icon={<i className="fa-solid fa-right-from-bracket mx-3"></i>}
+        </MenuItem >
+        <MenuItem onClick={removeFromLocalStorage} icon={<i  className="fa-solid fa-right-from-bracket mx-3"></i>}
          component={<Link to='/login'/>}>
         
          Logout 
