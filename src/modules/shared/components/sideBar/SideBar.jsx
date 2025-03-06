@@ -13,7 +13,6 @@ export default function SideBar() {
 
   const removeFromLocalStorage = () => {
     localStorage.removeItem('token'); // 'myItem' is the key you're removing
-    console.log('token removed from localStorage');
   };
   
  
