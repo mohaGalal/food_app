@@ -213,11 +213,11 @@ const handleShowUpdate = (id, name) => {
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">
+        <Dropdown.Item href="">
          <i className="fa-solid fa-trash mx-3 text-success" onClick={()=> handleShow(category.id)}></i>
          <span>delete</span>
          </Dropdown.Item>
-        <Dropdown.Item href="#/action-2">
+        <Dropdown.Item href="">
         <i className="fa-regular fa-pen-to-square mx-3 text-success"  onClick={() => handleShowUpdate(category.id, category.name)}></i>
         <span>edit</span>
         </Dropdown.Item>
